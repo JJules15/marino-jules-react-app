@@ -13,32 +13,6 @@ const HomePage = () => {
                     Development and Marketing</p>
             </section>
             {/*Navigation Link*/}
-            <!-- <nav className="navigation">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="#resume">Resume</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#awards">Awards</a>
-                <a href="#interests">Interests</a>
-                <a href="#references">References</a>
-                <a href="#Contact">Contact</a>
-            </nav> -->
-            <!--<section className="skills">
-                <h2>Skills & Highlights</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Marketo</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </section>-->
 
             <section id="contact-me">
                 <h2>Contact Me</h2>

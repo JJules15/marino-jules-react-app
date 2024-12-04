@@ -5,7 +5,7 @@ const Header = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
 
     const handleDropdown = (header) => {
-        setActivedropdown(activeDropdown === header ? null : header);
+        setActiveDropdown(activeDropdown === header ? null : header);
     };
 
     return (
