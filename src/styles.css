@@ -1,0 +1,47 @@
+.homepage {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.navigation {
+    margin: 20px 0;
+}
+
+.navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0070f3;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+}

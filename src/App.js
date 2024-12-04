@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { Analytics } from "@vercel/analytics/react";
+import HomePage from "./HomePage";
+import Blog from "./blog";
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +22,17 @@ function App() {
       </header>
     </div>
   );
+}*/
+
+function App() {
+  return (
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/blog" element={<Blog/>}/>
+        </Routes>
+      </Router>
+  )
 }
 
 export default App;
