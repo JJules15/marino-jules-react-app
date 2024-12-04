@@ -6,6 +6,7 @@ const HomePage = () => {
     return (
         <div className="homepage">
             {/* Hero Section */}
+            <Header/>
             <section className="hero">
                 <img src="logo.svg" alt="logo" />
                 <h1>Welcome to my Portfolio</h1>

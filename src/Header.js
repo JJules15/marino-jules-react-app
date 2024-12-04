@@ -5,7 +5,7 @@ const Header = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
 
     const handleDropdown = (header) => {
-        setActiveDropdown(activeDropdown === header ? null : header);
+        setActiveDropdown(activeDropdown === header ? null : menu);
     };
 
     return (
@@ -21,6 +21,7 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
+
                     <li className="menu-item">
                         <button onClick={() => handleDropdown("resume")}>Resume</button>
                         {activeDropdown === "resume" && (
@@ -32,6 +33,7 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
+
                     <li className="menu-item">
                         <a href="#blog">Blog</a>
                     </li>
