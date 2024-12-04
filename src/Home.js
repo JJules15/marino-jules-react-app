@@ -1,5 +1,6 @@
-import react from 'react';
+import React from 'react';
 import "./styles.css";
+import Header from "./Header";
 
 const HomePage = () => {
     return (
@@ -8,10 +9,11 @@ const HomePage = () => {
             <section className="hero">
                 <img src="logo.svg" alt="logo" />
                 <h1>Welcome to my Portfolio</h1>
-                <p>Front-End Developer | Designer | Creative Thinker</p>
+                <p>Senior Digital Analyst | Student at Boston University | Digital Project Management, Product
+                    Development and Marketing</p>
             </section>
             {/*Navigation Link*/}
-            <nav className="navigation">
+            <!-- <nav className="navigation">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -23,8 +25,8 @@ const HomePage = () => {
                 <a href="#interests">Interests</a>
                 <a href="#references">References</a>
                 <a href="#Contact">Contact</a>
-            </nav>
-            <section className="skills">
+            </nav> -->
+            <!--<section className="skills">
                 <h2>Skills & Highlights</h2>
                 <ul>
                     <li>HTML</li>
@@ -36,6 +38,31 @@ const HomePage = () => {
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
+            </section>-->
+
+            <section id="contact-me">
+                <h2>Contact Me</h2>
+                <p>Details</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <p>Details</p>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <p>Details</p>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>Details</p>
+            </section>
+            <section id="awards">
+                <h2>Awards</h2>
+                <p>Details</p>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <p>Details</p>
             </section>
             {/*Footer*/}
             <footer className="footer">
