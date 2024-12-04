@@ -15,7 +15,7 @@ const HomePage = () => {
             </section>
             {/*Navigation Link*/}
 
-            <section id="contact-me">
+            <!-- <section id="contact-me">
                 <h2>Contact Me</h2>
                 <p>Details</p>
             </section>
@@ -38,6 +38,14 @@ const HomePage = () => {
             <section id="blog">
                 <h2>Blog</h2>
                 <p>Details</p>
+            </section> -->
+
+            <section className="introduction">
+                <h1>Introduction</h1>
+                <p>Lorem Upsum</p>
+            </section>
+            <section className="details">
+                <p>Lorem Ipsum</p>
             </section>
             {/*Footer*/}
             <footer className="footer">
