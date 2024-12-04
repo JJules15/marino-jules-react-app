@@ -15,31 +15,6 @@ const HomePage = () => {
             </section>
             {/*Navigation Link*/}
 
-            <!-- <section id="contact-me">
-                <h2>Contact Me</h2>
-                <p>Details</p>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <p>Details</p>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <p>Details</p>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <p>Details</p>
-            </section>
-            <section id="awards">
-                <h2>Awards</h2>
-                <p>Details</p>
-            </section>
-            <section id="blog">
-                <h2>Blog</h2>
-                <p>Details</p>
-            </section> -->
-
             <section className="introduction">
                 <h1>Introduction</h1>
                 <p>Lorem Upsum</p>
