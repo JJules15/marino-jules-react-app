@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import HomePage from "./HomePage";
+import Home from "./Home";
 import Blog from "./blog";
 
 /*function App() {
@@ -28,7 +28,7 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
+            <Route path="/" element={<Home/>}/>
           <Route path="/blog" element={<Blog/>}/>
         </Routes>
       </Router>
