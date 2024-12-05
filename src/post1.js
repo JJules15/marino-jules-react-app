@@ -12,7 +12,6 @@ const Post1 = () => {
     return (
         <div>
             <h1>{post.title}</h1>
-            <p>{post.excerpt}</p>
         </div>
     );
 };

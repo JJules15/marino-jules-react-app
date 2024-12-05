@@ -15,7 +15,6 @@ const Blog = () => {
     return (
         <div>
             <h1>{post.title}</h1>
-            <p>{post.excerpt}</p>
             <Link to="/">Back to Home</Link>
         </div>
     );
