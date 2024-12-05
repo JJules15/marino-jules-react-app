@@ -14,5 +14,13 @@
     "excerpt": "This is a blog post",
     "content": "This is an example",
     "url": "/blog/react-hooks"
+  },
+  {
+    "id": 3,
+    "title": "Blog Post 3",
+    "date": "December 3, 2024",
+    "excerpt": "This is a Blog post",
+    "content": "This is an example",
+    "url": "/blog/react/"
   }
 ]

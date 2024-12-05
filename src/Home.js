@@ -1,11 +1,10 @@
 import React from 'react';
 import "./styles.css";
 import Header from "./Header";
-import {Link, NavLink} from "react-router-dom";
 import blogPosts from "./blogPosts.json";
 
 const HomePage = () => {
-    const featuredPosts = blogPosts.slice(0, 3);
+    const featuredPosts = Array.isArray(blogPosts) ? blogPosts.slice(0, 3) : [];
 
     return (
         <div className="homepage">
@@ -26,15 +25,10 @@ const HomePage = () => {
             <section className="featured-blogs">
                 <h2>Featured Blogs</h2>
                 <div className="blog-grid">
-                    {featuredPosts.map((post) => (
-                        <div className="blog-card" key={post.id}>
-                            <h3>{post.title}</h3>
-                            <p>{post.excerpt}</p>
-                            <p>{post.date}</p>
-                            <p>{post.content}</p>
-                            <Link to={`/blog/${post.id}`}>Read More</Link>
-                        </div>
-                    ))}
+                    <div className="blog-card">
+                        <h3>Something</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor, elit vel</p>
+                    </div>
                 </div>
             </section>
             {/*Footer*/}

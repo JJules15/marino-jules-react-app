@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
+import {BrowserRouter as Router} from "react-router-dom";
 
 /*ReactDOM.render(
     <React.StrictMode>
