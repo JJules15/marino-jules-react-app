@@ -33,6 +33,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/blog/:id" element={<Post1/>}/>
+            <Route path="/post1" element={<Post1/>}/>
         </Routes>
       </Router>
   )

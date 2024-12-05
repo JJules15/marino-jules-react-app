@@ -6,7 +6,6 @@ import blogPosts from "./blogPosts.json";
 const Blog = () => {
     const {id} = useParams();
     const post = blogPosts.find(p => p.id === parseInt(id));
-    post.excerpt = undefined;
 
     if (!post) {
         return <div>Post not found</div>;
@@ -16,6 +15,7 @@ const Blog = () => {
         <div>
             <h1>{post.title}</h1>
             <p>{post.excerpt}</p>
+            <Link to="/">Back to Home</Link>
         </div>
     );
 };
