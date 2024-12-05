@@ -1,14 +1,18 @@
 import React from 'react';
-import posts from "./blogPosts.json";
+import blogPosts from "./blogPosts.json";
 import {Link} from "react-router-dom";
 
-const Post1 = ({title, date, content}) => {
+const Post1 = () => {
+    const post = blogPosts.find((p) => p.id === 1);
+
+    if (!post) {
+        return <div>Post not found</div>;
+    }
+
     return (
-        <div className="blog-post">
-            <h1>{Title}</h1>
-            <p className="date">{date}</p>
-            <div className="content">{content}</div>
-            <Link to="/">Back to Home</Link>
+        <div>
+            <h1>{post.title}</h1>
+            <p>{post.content}</p>
         </div>
     );
 };
