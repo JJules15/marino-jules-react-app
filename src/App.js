@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from "./Home";
-import Blog from "./blog";
+import HomePage from "./Home";
+import Blog from "./Blog";
+import BlogPost from "./BlogPost";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./Header";
 import Post1 from "./post1";
