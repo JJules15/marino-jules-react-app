@@ -4,6 +4,7 @@
     "title": "Blog Post 1",
     "date": "December 1, 2024",
     "excerpt": "This is a blog post",
+    "content": "This is a blog post",
     "url": "/blog/getting-started/with-react"
   },
   {
@@ -11,6 +12,7 @@
     "title": "Blog Post 2",
     "date": "December 2, 2024",
     "excerpt": "This is a blog post",
+    "content": "This is an example",
     "url": "/blog/react-hooks"
   }
 ]

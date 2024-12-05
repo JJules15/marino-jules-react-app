@@ -6,6 +6,48 @@ body, html {
     box-sizing: border-box;
 }
 
+.featured-blogs {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.featured blogs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.blog-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
 .homepage {
     display: flex;
     flex-direction: column;
@@ -140,17 +182,6 @@ body, html {
 .blog-post p {
     font-size: 1rem;
     line-height: 1.5;
-}
-
-.details a {
-    font-size: 1rem;
-    color: #0070f3;
-    text-decoration: none;
-    margin: 0.5rem 0;
-}
-
-.details a:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
