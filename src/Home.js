@@ -3,7 +3,7 @@ import "./styles.css";
 import Header from "./Header";
 import {Link, NavLink} from "react-router-dom";
 import blogPosts from "./blogPosts.json";
-import {Analytics} from "@vercel/analytics/next";
+import {Analytics} from "@vercel/analytics/react";
 
 const HomePage = () => {
     return (
