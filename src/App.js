@@ -4,6 +4,7 @@ import Home from "./Home";
 import Blog from "./blog";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./Header";
+import Post1 from "./Post1";
 
 /*function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
           <Route path="/blog" element={<Blog/>}/>
+            <Route path="/blog/:id" element={<Blog/>}/>
         </Routes>
       </Router>
   )

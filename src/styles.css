@@ -117,11 +117,40 @@ body, html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .social-links a {
-    margin: 0 10px;
+    margin: 0 20px;
+}
+
+/*Blog post styling*/
+.blog-post {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.details a {
+    font-size: 1rem;
+    color: #0070f3;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.details a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

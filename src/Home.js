@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles.css";
 import Header from "./Header";
+import {Link} from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -16,8 +17,8 @@ const HomePage = () => {
             {/*Navigation Link*/}
 
             <section className="introduction">
-                <h1>Introduction</h1>
-                <p>Lorem Upsum</p>
+                <h1>My Portfolio</h1>
+                <p>I am a Marketing Technology enthusiast, finding unmatched.......</p>
             </section>
             <section className="details">
                 <p>Lorem Ipsum</p>
