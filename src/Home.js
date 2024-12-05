@@ -1,7 +1,8 @@
 import React from 'react';
 import "./styles.css";
 import Header from "./Header";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
+import blogPosts from "./blogPosts.json";
 
 const HomePage = () => {
     return (
@@ -21,7 +22,11 @@ const HomePage = () => {
                 <p>I am a Marketing Technology enthusiast, finding unmatched.......</p>
             </section>
             <section className="details">
-                <p>Lorem Ipsum</p>
+                {blogPosts.map((post) => (
+                    <Link to={`/blog/${post.id}`} key={post.id}>
+                        {post.title}
+                    </Link>
+                ))}
             </section>
             {/*Footer*/}
             <footer className="footer">
