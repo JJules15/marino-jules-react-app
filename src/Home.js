@@ -9,7 +9,6 @@ const HomePage = () => {
         <div className="homepage">
             {/* Hero Section */}
             <Header/>
-            <Analytics/>
             <section className="hero">
                 <img src="logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
