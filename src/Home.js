@@ -3,12 +3,14 @@ import "./styles.css";
 import Header from "./Header";
 import {Link, NavLink} from "react-router-dom";
 import blogPosts from "./blogPosts.json";
+import {Analytics} from "@vercel/analytics/next";
 
 const HomePage = () => {
     return (
         <div className="homepage">
             {/* Hero Section */}
             <Header/>
+            <Analytics/>
             <section className="hero">
                 <img src="logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
