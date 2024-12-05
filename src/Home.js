@@ -8,7 +8,7 @@ const HomePage = () => {
             {/* Hero Section */}
             <Header/>
             <section className="hero">
-                <img src="logo.svg" alt="logo" />
+                <img src="logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
                 <p>Senior Digital Analyst | Student at Boston University | Digital Project Management, Product
                     Development and Marketing</p>
