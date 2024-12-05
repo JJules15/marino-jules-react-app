@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles.css";
 import Header from "./Header";
 import {Link, NavLink} from "react-router-dom";
-import "./blogPosts.json";
+import blogPosts from "./blogPosts.json";
 
 const HomePage = () => {
     return (
