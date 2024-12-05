@@ -3,6 +3,7 @@ import "./styles.css";
 import Header from "./Header";
 import {Link, NavLink} from "react-router-dom";
 import blogPosts from "./blogPosts.json";
+import Blog from "./blog";
 
 const HomePage = () => {
     return (
@@ -22,11 +23,6 @@ const HomePage = () => {
                 <p>I am a Marketing Technology enthusiast, finding unmatched.......</p>
             </section>
             <section className="details">
-                {blogPosts.map((post) => (
-                    <Link to={`/blog/${post.id}`} key={post.id}>
-                        {post.title}
-                    </Link>
-                ))}
             </section>
             {/*Footer*/}
             <footer className="footer">
