@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomePage from "./Home";
-import App from './App';
+import HomePage from "./pages/Home";
+import App from "./App";
 import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
@@ -24,7 +24,11 @@ reportWebVitals(sendToVercelAnalytics);*/
 
 ReactDOM.render(
     <React.StrictMode>
-        <HomePage />
+        <DevSupport ComponentPreviews={ComponentPreviews}
+                    useInitialHook={useInitial}
+        >
+            <HomePage/>
+        </DevSupport>
     </React.StrictMode>,
     document.getElementById("root")
 );

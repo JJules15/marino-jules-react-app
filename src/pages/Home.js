@@ -4,6 +4,7 @@ import Header from "./Header";
 import blogPosts from "./blogPosts.json";
 import {Link} from "react-router-dom";
 import BlogPost from "./blog";
+import {Analytics} from "@vercel/analytics/react"
 
 const HomePage = () => {
     const featuredPosts = blogPosts.slice(0, 3);
@@ -12,6 +13,7 @@ const HomePage = () => {
         <div className="homepage">
             {/* Hero Section */}
             <Header/>
+            <Analytics/>
             <section className="hero">
                 <img src="logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
