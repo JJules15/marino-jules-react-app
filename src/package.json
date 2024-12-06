@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@makeswift/runtime": "^0.21.3",
     "@plasmicapp/cli": "^0.1.334",
     "@plasmicapp/loader": "^0.0.59",
     "@plasmicapp/loader-react": "^1.0.371",
