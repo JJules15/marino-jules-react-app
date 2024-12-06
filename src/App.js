@@ -5,7 +5,6 @@ import React from "react";
 import BlogPost from "./blog";
 import BlogPage from "./BlogPage";
 import {PlasmicRootProvider} from "@plasmicapp/loader";
-import plasmicLoader from "./plasmic-init";
 
 /*function App() {
   return (
