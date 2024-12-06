@@ -12,6 +12,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@plasmicapp/cli": "^0.1.334",
+    "@plasmicapp/loader": "^0.0.59",
+    "@plasmicapp/loader-react": "^1.0.371",
+    "@vercel/analytics": "^1.4.1",
     "tinacms": "^2.5.0"
   },
   "devDependencies": {
