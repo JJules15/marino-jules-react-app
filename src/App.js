@@ -1,10 +1,14 @@
 import './App.css';
-import HomePage from "./Home";
+import HomePage from "./pages/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React from "react";
 import BlogPost from "./blog";
 import BlogPage from "./BlogPage";
-import {PlasmicRootProvider} from "@plasmicapp/loader";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 
 /*function App() {
   return (
@@ -32,11 +36,12 @@ function App() {
       <Router>
         <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/blog/:id" element={<BlogPost/>}/>
-            <Route path="/blog" element={<BlogPage/>}/>
+            <Route path="/about-me" element={<About/>}/>
+            <Route path="/contact-me" element={<Contact/>}/>
+            <Route path="/skills" element={<Skills/>}/>
         </Routes>
       </Router>
-  )
+  );
 }
 
 export default App;

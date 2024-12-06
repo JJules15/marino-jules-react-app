@@ -1,10 +1,10 @@
 import React from 'react';
-import "./styles.css";
-import Header from "./Header";
-import blogPosts from "./blogPosts.json";
+import "../styles.css";
+import Header from "../components/Header";
+import blogPosts from "../blogPosts.json";
 import {Link} from "react-router-dom";
-import BlogPost from "./blog";
-import {Analytics} from "@vercel/analytics/react"
+import BlogPost from "../blog";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
     const featuredPosts = blogPosts.slice(0, 3);
@@ -13,9 +13,8 @@ const HomePage = () => {
         <div className="homepage">
             {/* Hero Section */}
             <Header/>
-            <Analytics/>
             <section className="hero">
-                <img src="logo.svg" alt="logo"/>
+                <img src="../logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
                 <p>Senior Digital Analyst | Student at Boston University | Digital Project Management, Product
                     Development and Marketing</p>
@@ -35,13 +34,7 @@ const HomePage = () => {
                 </div>
             </section>
             {/*Footer*/}
-            <footer className="footer">
-                <p>@ 2024 Marino Jules, All Rights Reserved</p>
-                <div className="social-links">
-                    <a href="https://github.com/JJules15/marino-jules-react-app">GitHub</a>
-                    <a href="https://www.linkedin.com/in/marino-jules/">LinkedIn</a>
-                </div>
-            </footer>
+            <Footer/>
         </div>
     );
 };

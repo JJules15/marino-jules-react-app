@@ -1,7 +1,7 @@
 import {ComponentPreview, Previews} from '@react-buddy/ide-toolbox'
 import {PaletteTree} from './palette'
 import App from "../App";
-import HomePage from "../Home";
+import HomePage from "../pages/Home";
 import BlogPost from "../blog";
 
 const ComponentPreviews = () => {
