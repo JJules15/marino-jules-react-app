@@ -2,9 +2,11 @@ import React from 'react';
 import "./styles.css";
 import Header from "./Header";
 import blogPosts from "./blogPosts.json";
+import {Link} from "react-router-dom";
+import BlogPost from "./blog";
 
 const HomePage = () => {
-    const featuredPosts = Array.isArray(blogPosts) ? blogPosts.slice(0, 3) : [];
+    const featuredPosts = blogPosts.slice(0, 3);
 
     return (
         <div className="homepage">
@@ -25,10 +27,9 @@ const HomePage = () => {
             <section className="featured-blogs">
                 <h2>Featured Blogs</h2>
                 <div className="blog-grid">
-                    <div className="blog-card">
-                        <h3>Something</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor, elit vel</p>
-                    </div>
+                    <BlogPost post={featuredPosts[0]}/>
+                    <BlogPost post={featuredPosts[1]}/>
+                    <BlogPost post={featuredPosts[2]}/>
                 </div>
             </section>
             {/*Footer*/}

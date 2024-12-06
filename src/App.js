@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePage from "./Home";
-import Blog from "./blog";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Header from "./Header";
-import Post1 from "./post1";
+import React from "react";
+import BlogPost from "./blog";
+import BlogPage from "./BlogPage";
 
 /*function App() {
   return (
@@ -32,7 +31,8 @@ function App() {
       <Router>
         <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/blog/:id" element={<Blog/>}/>
+            <Route path="/blog/:id" element={<BlogPost/>}/>
+            <Route path="/blog" element={<BlogPage/>}/>
         </Routes>
       </Router>
   )

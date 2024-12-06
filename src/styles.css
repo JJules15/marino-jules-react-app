@@ -200,6 +200,46 @@ body, html {
     text-align: left;
 }
 
+.blog-page {
+    font-family: Arial, sans-serif;
+}
+
+.blog-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-list h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .main-menu {
         flex-direction: column;
