@@ -16,8 +16,7 @@
     "start": "react-scripts start",
     "build": "tinacms build && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\""
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
