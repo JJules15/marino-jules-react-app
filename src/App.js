@@ -3,33 +3,14 @@ import HomePage from "./pages/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React from "react";
 import BlogPost from "./blog";
-import BlogPage from "./BlogPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/about";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
-
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}*/
+import Experience from "./pages/Experience";
+import Education from "./pages/Education";
+import Awards from "./pages/Awards";
 
 function App() {
   return (
@@ -37,12 +18,17 @@ function App() {
           <Header/>
           <main>
               <Routes>
-                  <Route path="" element={<HomePage/>}/>
+                  <Route path="/" element={<HomePage/>}/>
                   <Route path="/about" element={<About/>}/>
                   <Route path="/contact-me" element={<Contact/>}/>
                   <Route path="/skills" element={<Skills/>}/>
+                  <Route path="/education" element={<Education/>}/>
+                  <Route path="/awards" element={<Awards/>}/>
+                  <Route path="/experience" element={<Experience/>}/>
+                  <Route path="/blog" element={<BlogPost/>}/>
               </Routes>
           </main>
+          <Footer/>
       </Router>
   );
 }

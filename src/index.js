@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomePage from "./pages/Home";
 import App from "./App";
 import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
-import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
 
-/*ReactDOM.render(
+ReactDOM.render(
     <React.StrictMode>
         <DevSupport ComponentPreviews={ComponentPreviews}
                     useInitialHook={useInitial}
@@ -17,20 +15,7 @@ import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
             <App/>
         </DevSupport>
     </React.StrictMode>,
-    document.getElementById('root')
-);
-
-reportWebVitals(sendToVercelAnalytics);*/
-
-ReactDOM.render(
-    <React.StrictMode>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
-            <BrowserRouter>
-                <HomePage/>
-            </BrowserRouter>
-        </DevSupport>
-    </React.StrictMode>,
     document.getElementById("root")
 );
+
+reportWebVitals(sendToVercelAnalytics);

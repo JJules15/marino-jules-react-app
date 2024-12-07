@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "../styles.css";
 
 const Skills = () => {
     return (
         <div className="skills">
-            <Header/>
             <h2>Skills</h2>
             <ul>
                 <li>JavaScript</li>
@@ -15,7 +12,6 @@ const Skills = () => {
                 <li>HTML & CSS</li>
                 <li>Version Control (Git)</li>
             </ul>
-            <Footer/>
         </div>
     );
 };

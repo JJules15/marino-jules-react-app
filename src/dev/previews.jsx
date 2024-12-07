@@ -5,6 +5,7 @@ import HomePage from "../pages/Home";
 import BlogPost from "../blog";
 import About from "../pages/about";
 import Header from "../components/Header";
+import Contact from "../pages/Contact";
 
 const ComponentPreviews = () => {
     return (
@@ -23,6 +24,9 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/Header">
                 <Header/>
+            </ComponentPreview>
+            <ComponentPreview path="/Contact">
+                <Contact/>
             </ComponentPreview>
         </Previews>
     )

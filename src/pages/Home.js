@@ -1,10 +1,7 @@
 import React from 'react';
 import "../styles.css";
-import Header from "../components/Header";
 import blogPosts from "../blogPosts.json";
-import {Link} from "react-router-dom";
 import BlogPost from "../blog";
-import Footer from "../components/Footer";
 
 const HomePage = () => {
     const featuredPosts = blogPosts.slice(0, 3);
@@ -12,7 +9,6 @@ const HomePage = () => {
     return (
         <div className="homepage">
             {/* Hero Section */}
-            <Header/>
             <section className="hero">
                 <img src="../logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
@@ -34,7 +30,6 @@ const HomePage = () => {
                 </div>
             </section>
             {/*Footer*/}
-            <Footer/>
         </div>
     );
 };
