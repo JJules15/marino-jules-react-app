@@ -6,7 +6,7 @@ import BlogPost from "./blog";
 import BlogPage from "./BlogPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./pages/About";
+import About from "./pages/about";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 
@@ -34,12 +34,15 @@ import Skills from "./pages/Skills";
 function App() {
   return (
       <Router>
-        <Routes>
-            <Route path="/" element={<HomePage/>}/>
-            <Route path="/about-me" element={<About/>}/>
-            <Route path="/contact-me" element={<Contact/>}/>
-            <Route path="/skills" element={<Skills/>}/>
-        </Routes>
+          <Header/>
+          <main>
+              <Routes>
+                  <Route path="" element={<HomePage/>}/>
+                  <Route path="/about" element={<About/>}/>
+                  <Route path="/contact-me" element={<Contact/>}/>
+                  <Route path="/skills" element={<Skills/>}/>
+              </Routes>
+          </main>
       </Router>
   );
 }

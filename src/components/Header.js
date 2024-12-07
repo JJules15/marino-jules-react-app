@@ -1,8 +1,11 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import "./Header.css";
+import {Link, useLocation} from "react-router-dom";
 
 const Header = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
+
+    const location = useLocation();
 
     const handleDropdown = (header) => {
         setActiveDropdown(activeDropdown === header ? null : header);
@@ -16,7 +19,8 @@ const Header = () => {
                         <button onClick={() => handleDropdown("about")}>About</button>
                         {activeDropdown === "about" && (
                             <ul className="dropdown">
-                                <li><a href="/about-me">About Me</a></li>
+                                <li><a href="">Home</a></li>
+                                <li><a href="/about">About</a></li>
                                 <li><a href="/contact-me">Contact Me</a></li>
                             </ul>
                         )}

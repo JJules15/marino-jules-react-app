@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
 
 /*ReactDOM.render(
     <React.StrictMode>
@@ -27,7 +27,9 @@ ReactDOM.render(
         <DevSupport ComponentPreviews={ComponentPreviews}
                     useInitialHook={useInitial}
         >
-            <HomePage/>
+            <BrowserRouter>
+                <HomePage/>
+            </BrowserRouter>
         </DevSupport>
     </React.StrictMode>,
     document.getElementById("root")
