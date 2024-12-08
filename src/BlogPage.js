@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import blogPosts from "./blogPosts.json";
-import Header from "./Header";
+import Header from "./components/Header";
 import "./styles.css";
 
 const BlogPage = () => {

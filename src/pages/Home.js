@@ -1,9 +1,7 @@
 import React from 'react';
-import "./styles.css";
-import Header from "./Header";
-import blogPosts from "./blogPosts.json";
-import {Link} from "react-router-dom";
-import BlogPost from "./blog";
+import "../styles.css";
+import blogPosts from "../blogPosts.json";
+import BlogPost from "../blog";
 
 const HomePage = () => {
     const featuredPosts = blogPosts.slice(0, 3);
@@ -11,9 +9,8 @@ const HomePage = () => {
     return (
         <div className="homepage">
             {/* Hero Section */}
-            <Header/>
             <section className="hero">
-                <img src="logo.svg" alt="logo"/>
+                <img src="../logo.svg" alt="logo"/>
                 <h1>Welcome to my Portfolio</h1>
                 <p>Senior Digital Analyst | Student at Boston University | Digital Project Management, Product
                     Development and Marketing</p>
@@ -33,13 +30,6 @@ const HomePage = () => {
                 </div>
             </section>
             {/*Footer*/}
-            <footer className="footer">
-                <p>@ 2024 Marino Jules, All Rights Reserved</p>
-                <div className="social-links">
-                    <a href="https://github.com/JJules15/marino-jules-react-app">GitHub</a>
-                    <a href="https://www.linkedin.com/in/marino-jules/">LinkedIn</a>
-                </div>
-            </footer>
         </div>
     );
 };
