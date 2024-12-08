@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
+import {Analytics} from "@vercel/analytics/react";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -19,3 +20,4 @@ ReactDOM.render(
 );
 
 reportWebVitals(sendToVercelAnalytics);
+<Analytics/>
