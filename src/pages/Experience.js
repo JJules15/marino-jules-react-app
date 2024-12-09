@@ -6,13 +6,13 @@ const Experience = () => {
         <div className="experience">
             <h2>Experience</h2>
             <div>
-                <h3>Job Title 1</h3>
-                <p>[Company Name] - [Year]</p>
+                <h3>Marketing Operations Manager</h3>
+                <p>Arena, a PTC Business: 2022 - Present</p>
                 <p>Brief description of your role and achievements.</p>
             </div>
             <div>
-                <h3>Job Title 2</h3>
-                <p>[Company Name] - [Year]</p>
+                <h3>Marketing Operations Analyst</h3>
+                <p>DTCC: 2019 - 2022</p>
                 <p>Brief description of your role and achievements.</p>
             </div>
         </div>
