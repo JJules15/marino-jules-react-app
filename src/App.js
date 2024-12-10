@@ -26,6 +26,7 @@ function App() {
                   <Route path="/awards" element={<Awards/>}/>
                   <Route path="/experience" element={<Experience/>}/>
                   <Route path="/blog" element={<BlogPost/>}/>
+                  <Route path="/blogs/:id" element={<BlogPost/>}/>
               </Routes>
           </main>
           <Footer/>

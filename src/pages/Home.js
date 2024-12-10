@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "../styles.css";
 import blogPosts from "../blogPosts.json";
-import BlogPost from "../blog";
+import BlogPost from "../blogPost";
+import BlogItem from "../BlogItem";
 
 const HomePage = () => {
-    const featuredPosts = blogPosts.slice(0, 3);
+    const [featuredPosts, setFeaturedPosts] = useState([]);
+
+    useEffect(() => {
+        setFeaturedPosts(blogPosts);
+    }, []);
 
     return (
         <div className="homepage">
@@ -19,14 +24,23 @@ const HomePage = () => {
 
             <section className="introduction">
                 <h1>My Portfolio</h1>
-                <p>I am a Marketing Technology enthusiast, finding unmatched.......</p>
+                <p>I am a Marketing Technology enthusiast with experience in HTML, CSS and JavaScript.
+                    I have over 5 experience in digital marketing, product management, marketing operations.
+                    I'm currently enrolled in a MS in Software Development from Boston University Metropolitan
+                    University.</p>
             </section>
             <section className="featured-blogs">
                 <h2>Featured Blogs</h2>
                 <div className="blog-grid">
-                    <BlogPost post={featuredPosts[0]}/>
-                    <BlogPost post={featuredPosts[1]}/>
-                    <BlogPost post={featuredPosts[2]}/>
+                    {featuredPosts.map((post) => (
+                        <BlogItem
+                            key={post.id}
+                            url={post.url}
+                            title={post.title}
+                            date={post.date}
+                            excerpt={post.excerpt}
+                        />
+                    ))}
                 </div>
             </section>
             {/*Footer*/}
