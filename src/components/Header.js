@@ -52,10 +52,6 @@ const Header = () => {
                             </ul>
                         )}
                     </li>
-
-                    <li className="menu-item">
-                        <Link to="/blog">Blog</Link>
-                    </li>
                 </ul>
             </nav>
         </header>

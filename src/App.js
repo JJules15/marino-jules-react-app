@@ -2,7 +2,6 @@ import './App.css';
 import HomePage from "./pages/Home";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React from "react";
-import BlogPost from "./blog";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/about";
@@ -25,8 +24,6 @@ function App() {
                   <Route path="/education" element={<Education/>}/>
                   <Route path="/awards" element={<Awards/>}/>
                   <Route path="/experience" element={<Experience/>}/>
-                  <Route path="/blog" element={<BlogPost/>}/>
-                  <Route path="/blogs/:id" element={<BlogPost/>}/>
               </Routes>
           </main>
           <Footer/>

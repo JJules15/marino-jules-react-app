@@ -2,7 +2,6 @@ import {ComponentPreview, Previews} from '@react-buddy/ide-toolbox'
 import {PaletteTree} from './palette'
 import App from "../App";
 import HomePage from "../pages/Home";
-import BlogPost from "../blog";
 import About from "../pages/about";
 import Header from "../components/Header";
 import Contact from "../pages/Contact";

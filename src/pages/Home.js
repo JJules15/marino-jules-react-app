@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "../styles.css";
-import blogPosts from "../blogPosts.json";
-import BlogPost from "../blogPosts.json"
-import BlogItem from "../BlogItem";
+import blogPosts from "../public/blogPosts.json";
 
 const HomePage = () => {
     const [featuredPosts, setFeaturedPosts] = useState([]);
@@ -28,20 +26,6 @@ const HomePage = () => {
                     I have over 5 experience in digital marketing, product management, marketing operations.
                     I'm currently enrolled in a MS in Software Development from Boston University Metropolitan
                     University.</p>
-            </section>
-            <section className="featured-blogs">
-                <h2>Featured Blogs</h2>
-                <div className="blog-grid">
-                    {featuredPosts.map((post) => (
-                        <BlogItem
-                            key={post.id}
-                            url={post.url}
-                            title={post.title}
-                            date={post.date}
-                            excerpt={post.excerpt}
-                        />
-                    ))}
-                </div>
             </section>
             {/*Footer*/}
         </div>
