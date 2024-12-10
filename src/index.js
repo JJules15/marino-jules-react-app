@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
-import {SpeedInsights} from "@vercel/speed-insights/react";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -14,7 +13,6 @@ ReactDOM.render(
                     useInitialHook={useInitial}
         >
             <App/>
-            <SpeedInsights/>
         </DevSupport>
     </React.StrictMode>,
     document.getElementById("root")
