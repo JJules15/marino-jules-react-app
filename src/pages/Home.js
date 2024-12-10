@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import "../styles.css";
 import blogPosts from "../blogPosts.json";
-import BlogPost from "../blogPost";
+import BlogPost from "../blogPosts.json"
 import BlogItem from "../BlogItem";
 
 const HomePage = () => {

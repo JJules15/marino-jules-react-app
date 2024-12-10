@@ -14,7 +14,7 @@ function BlogPage() {
 
     return (
         <section className="featured-blogs">
-            <h2>Featured Blogs</h2>
+            <h2>My Blog</h2>
             <div className="blog-grid">
                 {featuredPosts.map((post) => (
                     <BlogItem
