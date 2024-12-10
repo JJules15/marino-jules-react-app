@@ -7,7 +7,6 @@ import {sendToVercelAnalytics} from './vitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
 import {SpeedInsights} from "@vercel/speed-insights/react";
-import {Analytics} from "@vercel/analytics/react";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -16,7 +15,6 @@ ReactDOM.render(
         >
             <App/>
             <SpeedInsights/>
-            <Analytics/>
         </DevSupport>
     </React.StrictMode>,
     document.getElementById("root")
