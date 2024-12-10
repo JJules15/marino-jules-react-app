@@ -6,8 +6,9 @@ const About = () => {
         <div className="about">
             <h2>About Me</h2>
             <p>
-                I am a [Your Profession] with [X years] of experience specializing in [Your Specialty]. I am driven
-                by the pursuit of excellence and innovation in the field of [Your Field].
+                My name is Marino Jules and I have x years of experience specializing in digital marketing and web
+                development.
+                I am driven by the pursuit of excellence and innovation.
             </p>
         </div>
     );
