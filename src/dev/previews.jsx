@@ -15,9 +15,6 @@ const ComponentPreviews = () => {
             <ComponentPreview path="/HomePage">
                 <HomePage/>
             </ComponentPreview>
-            <ComponentPreview path="/BlogPost">
-                <BlogPost/>
-            </ComponentPreview>
             <ComponentPreview path="/About">
                 <About/>
             </ComponentPreview>
