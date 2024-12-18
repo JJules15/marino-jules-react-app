@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build"
+    "start": "react-scripts start",
+    "build": "tinacms build && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,10 @@
     "@plasmicapp/cli": "^0.1.334",
     "@plasmicapp/loader": "^0.0.59",
     "@plasmicapp/loader-react": "^1.0.371",
+    "@react-buddy/ide-toolbox": "^2.4.0",
     "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
+    "nodemon": "^3.1.9",
     "tinacms": "^2.5.0"
   },
   "devDependencies": {
